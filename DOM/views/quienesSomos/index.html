@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- Documento HTML para la sección "¿Quiénes Somos?" de la página Monte Café -->
+<html lang="es">
+<head>
+  <!-- Metadatos principales -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Quiénes Somos? | Monte Café</title>
+
+  <!-- Importación de estilos CSS -->
+  <!-- Estilos para el Navbar y el Footer compartidos con otras páginas -->
+  <link rel="stylesheet" href="../../assets/css/styleNavbar.css" />
+  <link rel="stylesheet" href="../../assets/css/styleFooter.css" />
+  <!-- Estilo propio de esta página específica -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Importación de iconos desde Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
+  <!-- Librería de animaciones AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========================== NAVBAR ========================== -->
+<header class="navbar" data-aos="fade-down">
+  <div class="navbar-container">
+
+    <!-- Logo del sitio -->
+    <div class="logo">
+      <a href="../../index.html">
+        <img src="../../assets/img/Monte-Cafe.png" alt="Logo Café" />
+      </a>
+    </div>
+
+    <!-- Menú de navegación en versión de escritorio -->
+    <div class="nav-desktop">
+      <nav class="nav-links">
+        <a href="../../index.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="./index.html" class="active"><i class="fas fa-users"></i> ¿Quiénes somos?</a>
+        <a href="../productos/index.html"><i class="fas fa-mug-hot"></i> Productos</a>
+        <a href="../promociones/index.html"><i class="fas fa-tags"></i> Ofertas</a>
+        <a href="../contacto/index.html"><i class="fas fa-envelope"></i> Contacto</a>
+      </nav>
+
+      <!-- Barra de búsqueda -->
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Buscar..." />
+      </div>
+    </div>
+
+    <!-- Iconos rápidos como favoritos o perfil -->
+    <div class="nav-icons">
+      <i class="far fa-heart"></i>
+      <i class="far fa-user"></i>
+    </div>
+
+    <!-- Menú hamburguesa para pantallas pequeñas -->
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+<!-- ====================== CONTENIDO PRINCIPAL ===================== -->
+<main>
+
+  <!-- Sección principal de bienvenida o 'Hero' -->
+  <section id="hero" data-aos="zoom-in">
+    <h1>¿Quiénes Somos?</h1>
+    <p>Conoce nuestra historia, misión y valores que nos hacen únicos.</p>
+    <!-- Botón para mostrar la sección de Historia mediante JavaScript -->
+    <button id="btnHistoria">Ver Historia</button>
+  </section>
+
+  <!-- Sección de historia oculta por defecto -->
+  <section id="historia" class="oculto">
+    <h2>Nuestra Historia</h2>
+    <p>Monte Café nació hace más de 20 años del sueño de una familia cafetalera que cree en el sabor auténtico del café salvadoreño.</p>
+    <p>Desde nuestras montañas, cada grano es seleccionado cuidadosamente para garantizar un café premium, cultivado con procesos sostenibles y respetuosos con el medio ambiente.</p>
+    <blockquote>
+      “Nuestro compromiso es llevar el mejor aroma y sabor a cada taza, con el toque único de la tradición y la innovación.”
+    </blockquote>
+  </section>
+
+  <!-- Sección de misión y visión -->
+  <section id="mision-vision">
+    <div class="mision">
+      <h2>Misión</h2>
+      <p>Producir y ofrecer café de la más alta calidad, manteniendo prácticas agrícolas sostenibles y apoyando a los productores locales.</p>
+    </div>
+    <div class="vision">
+      <h2>Visión</h2>
+      <p>Ser la marca de café salvadoreña más reconocida a nivel internacional por su calidad y compromiso con la comunidad.</p>
+    </div>
+  </section>
+
+  <!-- Sección para presentar al equipo -->
+  <section id="equipo">
+    <h2>Conoce a Nuestro Equipo</h2>
+    <div class="equipo-grid">
+      <div class="miembro">
+        <img src="assets/img/juan.jpg" alt="Fundador">
+         <h3>Juan Pérez</h3>
+        <p>Fundador & Maestro Caficultor</p>
+      </div>
+      <div class="miembro">
+        <img src="assets/img/maria.jpg" alt="Catadora">
+         <h3>María López</h3>
+        <p>Especialista en Catación</p>
+      </div>
+      <div class="miembro">
+        <img src="assets/img/carlos.jpg" alt="Barista">
+         <h3>Carlos Ramírez</h3>
+        <p>Barista y Desarrollador de Sabores</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========================== FOOTER ========================== -->
+<footer class="footer" data-aos="fade-up">
+  <div class="footer-container">
+
+    <!-- Logo + suscripción a boletín -->
+    <div class="footer-section logo-newsletter">
+      <img src="../../assets/img/Monte-Cafe.png" alt="Monte Café Logo" class="footer-logo">
+      <h3>Suscríbete a nuestro boletín</h3>
+      <form class="newsletter-form">
+        <input type="email" placeholder="monteCafé@gmail.com">
+        <button type="submit">Suscribirme</button>
+      </form>
+      <!-- Íconos de redes sociales -->
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <!-- Información de contacto rápido -->
+    <div class="footer-section soporte">
+      <h4>Soporte</h4>
+      <p><i class="fas fa-phone-alt"></i> +503 2555-1122</p>
+    </div>
+
+    <div class="footer-section legal">
+      <h4>Legal</h4>
+      <p><a href="#">Políticas de compra</a></p>
+    </div>
+
+    <div class="footer-section contacto">
+      <h4>Contacto</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Cantón El Carmen, Chalatenango</p>
+      <p><i class="fas fa-envelope"></i> contacto@montecafe.com</p>
+      <p><i class="fas fa-phone"></i> +503 2555-1122</p>
+    </div>
+  </div>
+
+  <!-- Texto inferior del footer -->
+  <div class="footer-bottom">
+    &copy; 2025 Monte Café. Todos los derechos reservados.
+  </div>
+</footer>
+
+<!-- ===================== SCRIPTS ===================== -->
+
+<!-- JavaScript específico para esta página -->
+<script src="assets/js/main.js"></script>
+<!-- Script general (probablemente para funciones globales) -->
+<script src="../../main.js"></script>
+<!-- Script para la funcionalidad del menú de navegación -->
+<script src="../../assets/js/navbar.js"></script>
+<!-- Librería de animaciones AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  // Inicialización de las animaciones de AOS con configuración personalizada
+  AOS.init({
+    duration: 1000, // Duración de animaciones (ms)
+    once: false,    // Las animaciones se reproducen cada vez que aparece el elemento
+    mirror: true    // La animación también ocurre al hacer scroll hacia arriba
+  });
+</script>
+
+</body>
+</html>
